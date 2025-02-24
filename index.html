@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--projecttitle--><title>INTERIOR KEJARI</title><!--projecttitle-end-->
+		<!--projectdescription--><meta name="description" content="Baruuuuurururuurru"><!--projectdescription-end-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<script src="imagedata.js"></script>
+		<script src="jquery.js"></script>
+		<script src="three.min.js"></script>
+		<script src="panolens.min.js"></script>
+		
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
+		
+		<style>
+		
+			
+						
+			/* SCROLLBAR STYLING */
+			/* width */
+			::-webkit-scrollbar {
+				width: 0.25em;
+				height: 0.25em;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: #2c3643; 
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #0d9e59; 
+				transition: background .5s;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #00e075; 
+			}
+
+
+			html, body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #000;
+				color; black;
+			}
+
+			a:link, a:visited{
+				color: #bdc3c7;	
+			}
+
+			.fullwrapper{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+			}
+			
+			#container {
+                width: 100%;
+                height: 100%;
+            }
+			
+			#tmp{
+				position: fixed;
+				top: 0;
+				left: 0; 
+				right: 0;
+				bottom: 0;
+				padding: 3em;
+				background-color: rgba(0,0,0,.5);
+				backdrop-filter: blur(5px);
+				display: none;
+			}
+		</style>
+	</head>
+	<body id="body">
+	    <div id="container" style="color: black;"></div>
+    	
+		
+		
+		<!--customhtml--><div class='customhotspot' id='kamaranak1A'><div onclick='chclickinfospotkamaranak1A0();' id='infospotkamaranak1A0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A1();' id='infospotkamaranak1A1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A2();' id='infospotkamaranak1A2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A3();' id='infospotkamaranak1A3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A4();' id='infospotkamaranak1A4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A5();' id='infospotkamaranak1A5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1A6();' id='infospotkamaranak1A6' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamaranak1B'><div onclick='chclickinfospotkamaranak1B0();' id='infospotkamaranak1B0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1B1();' id='infospotkamaranak1B1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak1B2();' id='infospotkamaranak1B2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamaranak2A'><div onclick='chclickinfospotkamaranak2A0();' id='infospotkamaranak2A0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A1();' id='infospotkamaranak2A1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A2();' id='infospotkamaranak2A2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A3();' id='infospotkamaranak2A3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A4();' id='infospotkamaranak2A4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A5();' id='infospotkamaranak2A5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankiri.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A6();' id='infospotkamaranak2A6' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2A7();' id='infospotkamaranak2A7' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamaranak2B'><div onclick='chclickinfospotkamaranak2B0();' id='infospotkamaranak2B0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2B1();' id='infospotkamaranak2B1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamaranak2B2();' id='infospotkamaranak2B2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamarutamaA'><div onclick='chclickinfospotkamarutamaA0();' id='infospotkamarutamaA0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaA1();' id='infospotkamarutamaA1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaA2();' id='infospotkamarutamaA2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaA3();' id='infospotkamarutamaA3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaA4();' id='infospotkamarutamaA4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaA5();' id='infospotkamarutamaA5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamarutamaB'><div onclick='chclickinfospotkamarutamaB0();' id='infospotkamarutamaB0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB1();' id='infospotkamarutamaB1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB2();' id='infospotkamarutamaB2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB3();' id='infospotkamarutamaB3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB4();' id='infospotkamarutamaB4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB5();' id='infospotkamarutamaB5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB6();' id='infospotkamarutamaB6' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB7();' id='infospotkamarutamaB7' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaB8();' id='infospotkamarutamaB8' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kamarutamaC'><div onclick='chclickinfospotkamarutamaC0();' id='infospotkamarutamaC0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaC1();' id='infospotkamarutamaC1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaC2();' id='infospotkamarutamaC2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkamarutamaC3();' id='infospotkamarutamaC3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='ruangtamuBB'><div onclick='chclickinfospotruangtamuBB0();' id='infospotruangtamuBB0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuBB1();' id='infospotruangtamuBB1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuBB2();' id='infospotruangtamuBB2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuBB3();' id='infospotruangtamuBB3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuBB4();' id='infospotruangtamuBB4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='ruangtamuA'><div onclick='chclickinfospotruangtamuA0();' id='infospotruangtamuA0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA1();' id='infospotruangtamuA1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA2();' id='infospotruangtamuA2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA3();' id='infospotruangtamuA3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanatas.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA4();' id='infospotruangtamuA4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot3.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA5();' id='infospotruangtamuA5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA6();' id='infospotruangtamuA6' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA7();' id='infospotruangtamuA7' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA8();' id='infospotruangtamuA8' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA9();' id='infospotruangtamuA9' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotruangtamuA10();' id='infospotruangtamuA10' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kitchenB'><div onclick='chclickinfospotkitchenB0();' id='infospotkitchenB0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB1();' id='infospotkitchenB1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB2();' id='infospotkitchenB2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB3();' id='infospotkitchenB3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB4();' id='infospotkitchenB4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB5();' id='infospotkitchenB5' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB6();' id='infospotkitchenB6' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB7();' id='infospotkitchenB7' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanatas.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenB8();' id='infospotkitchenB8' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kitchenA'><div onclick='chclickinfospotkitchenA0();' id='infospotkitchenA0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenA1();' id='infospotkitchenA1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenA2();' id='infospotkitchenA2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenA3();' id='infospotkitchenA3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenA4();' id='infospotkitchenA4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='kitchenc'><div onclick='chclickinfospotkitchenc0();' id='infospotkitchenc0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenc1();' id='infospotkitchenc1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenc2();' id='infospotkitchenc2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotkitchenc3();' id='infospotkitchenc3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt1'><div onclick='chclickinfospotbt10();' id='infospotbt10' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt11();' id='infospotbt11' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt12();' id='infospotbt12' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt13();' id='infospotbt13' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt22'><div onclick='chclickinfospotbt220();' id='infospotbt220' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt221();' id='infospotbt221' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt1c1b'><div onclick='chclickinfospotbt1c1b0();' id='infospotbt1c1b0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt1c1b1();' id='infospotbt1c1b1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt1c1b2();' id='infospotbt1c1b2' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt1c1b3();' id='infospotbt1c1b3' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt1c1b4();' id='infospotbt1c1b4' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt2c22'><div onclick='chclickinfospotbt2c220();' id='infospotbt2c220' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt2c221();' id='infospotbt2c221' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt3c11'><div onclick='chclickinfospotbt3c110();' id='infospotbt3c110' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c111();' id='infospotbt3c111' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c112();' id='infospotbt3c112' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahanbawah.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c113();' id='infospotbt3c113' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankanan.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c114();' id='infospotbt3c114' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/keteranganbahankiri.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt3c22'><div onclick='chclickinfospotbt3c220();' id='infospotbt3c220' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c221();' id='infospotbt3c221' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt3c11Pqp0X'><div onclick='chclickinfospotbt3c11Pqp0X0();' id='infospotbt3c11Pqp0X0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c11Pqp0X1();' id='infospotbt3c11Pqp0X1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><div class='customhotspot' id='bt3c22uIrNg'><div onclick='chclickinfospotbt3c22uIrNg0();' id='infospotbt3c22uIrNg0' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div><div onclick='chclickinfospotbt3c22uIrNg1();' id='infospotbt3c22uIrNg1' style='position: fixed; top: 0; left: 0; cursor: pointer;'><img src='customhotspots/hotspot4.png' style='width: 64px; height: 64px;'></div></div><!--customhtml-end-->
+		
+		<div id="tmp">
+			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
+			<div class="mediaclosebutton" onclick="hideTemp()"><i class="fa fa-times-circle"></i></div>
+		</div>
+
+		<div id="loading" class="fullwrapper" style="display: table; width: 100%; height: 100%;">
+    		<div style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 30px; padding: 50px;">
+    			<!--loadingtext-->Loading...<!--loadingtext-end-->
+				<div id="loadingperc" style="font-size:12px;"></div>
+    		</div>
+    	</div>
+		
+    	<script>
+			
+            var container = document.querySelector( '#container' );
+			/*panolens*/
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
+/*panolens-end*/
+			
+			viewer.addUpdateCallback(function(){});
+			
+			/*panoramas*/
+var kamaranak1A = new PANOLENS.ImagePanorama( "panoramas/kamaranak1A.jpg" );
+			kamaranak1A.addEventListener('progress', onProgress);
+			kamaranak1A.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamaranak1A.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamaranak1A.addEventListener('click', function(e){
+			});
+
+var infospotkamaranak1A0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A0.position.set( 74.75, -3870.02, -3157.08 );
+					infospotkamaranak1A0.visible = false;
+					kamaranak1A.add(infospotkamaranak1A0);
+infospotkamaranak1A0.addEventListener('click', function(){
+ChangePanorama('ruangtamuA');
+});
+var infospotkamaranak1A1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A1.position.set( 4612.03, -253.77, -1890.48 );
+					infospotkamaranak1A1.visible = false;
+					kamaranak1A.add(infospotkamaranak1A1);
+infospotkamaranak1A1.addEventListener('click', function(){
+ChangePanorama('bt1');
+});
+var infospotkamaranak1A2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A2.position.set( 4520.08, -1866.35, -1021.37 );
+					infospotkamaranak1A2.visible = false;
+					kamaranak1A.add(infospotkamaranak1A2);
+infospotkamaranak1A2.addEventListener('click', function(){
+ChangePanorama('kamaranak1B');
+});
+var infospotkamaranak1A3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A3.position.set( 4009.24, -331.16, -2962.54 );
+					infospotkamaranak1A3.visible = false;
+					kamaranak1A.add(infospotkamaranak1A3);
+infospotkamaranak1A3.addEventListener('click', function(){
+showMedia(1, 'images/FA128.png');
+});
+var infospotkamaranak1A4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A4.position.set( 3482.87, -48.38, -3575.82 );
+					infospotkamaranak1A4.visible = false;
+					kamaranak1A.add(infospotkamaranak1A4);
+infospotkamaranak1A4.addEventListener('click', function(){
+showMedia(1, 'images/TH073SB.jpg');
+});
+var infospotkamaranak1A5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A5.position.set( 3765.59, 541.40, 3231.61 );
+					infospotkamaranak1A5.visible = false;
+					kamaranak1A.add(infospotkamaranak1A5);
+infospotkamaranak1A5.addEventListener('click', function(){
+showMedia(1, 'images/TH061SB.jpg');
+});
+var infospotkamaranak1A6 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1A6.position.set( 3061.23, -3817.97, 1017.66 );
+					infospotkamaranak1A6.visible = false;
+					kamaranak1A.add(infospotkamaranak1A6);
+infospotkamaranak1A6.addEventListener('click', function(){
+showMedia(1, 'images/TV5509SPC.jpg');
+});
+viewer.add( kamaranak1A );
+var kamaranak1B = new PANOLENS.ImagePanorama( "panoramas/kamaranak1B.jpg" );
+			kamaranak1B.addEventListener('progress', onProgress);
+			kamaranak1B.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamaranak1B.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamaranak1B.addEventListener('click', function(e){
+			});
+
+var infospotkamaranak1B0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1B0.position.set( -2008.72, -878.16, 4490.06 );
+					infospotkamaranak1B0.visible = false;
+					kamaranak1B.add(infospotkamaranak1B0);
+infospotkamaranak1B0.addEventListener('click', function(){
+ChangePanorama('bt1');
+});
+var infospotkamaranak1B1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1B1.position.set( 2962.79, -2804.59, -2876.75 );
+					infospotkamaranak1B1.visible = false;
+					kamaranak1B.add(infospotkamaranak1B1);
+infospotkamaranak1B1.addEventListener('click', function(){
+ChangePanorama('kamaranak1A');
+});
+var infospotkamaranak1B2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak1B2.position.set( 4099.66, -976.57, -2671.12 );
+					infospotkamaranak1B2.visible = false;
+					kamaranak1B.add(infospotkamaranak1B2);
+infospotkamaranak1B2.addEventListener('click', function(){
+ChangePanorama('ruangtamuA');
+});
+viewer.add( kamaranak1B );
+var kamaranak2A = new PANOLENS.ImagePanorama( "panoramas/kamaranak2A.jpg" );
+			kamaranak2A.addEventListener('progress', onProgress);
+			kamaranak2A.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamaranak2A.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamaranak2A.addEventListener('click', function(e){
+			});
+
+var infospotkamaranak2A0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A0.position.set( 4591.22, -1927.10, 417.37 );
+					infospotkamaranak2A0.visible = false;
+					kamaranak2A.add(infospotkamaranak2A0);
+infospotkamaranak2A0.addEventListener('click', function(){
+ChangePanorama('kamaranak2B');
+});
+var infospotkamaranak2A1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A1.position.set( 3079.94, -1539.17, -3618.57 );
+					infospotkamaranak2A1.visible = false;
+					kamaranak2A.add(infospotkamaranak2A1);
+infospotkamaranak2A1.addEventListener('click', function(){
+ChangePanorama('bt1c1b');
+});
+var infospotkamaranak2A2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A2.position.set( -0.98, -3366.42, 3691.81 );
+					infospotkamaranak2A2.visible = false;
+					kamaranak2A.add(infospotkamaranak2A2);
+infospotkamaranak2A2.addEventListener('click', function(){
+ChangePanorama('kitchenA');
+});
+var infospotkamaranak2A3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A3.position.set( 2820.93, 1116.79, -3969.16 );
+					infospotkamaranak2A3.visible = false;
+					kamaranak2A.add(infospotkamaranak2A3);
+infospotkamaranak2A3.addEventListener('click', function(){
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+});
+var infospotkamaranak2A4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A4.position.set( 2130.69, -3880.42, -2314.87 );
+					infospotkamaranak2A4.visible = false;
+					kamaranak2A.add(infospotkamaranak2A4);
+infospotkamaranak2A4.addEventListener('click', function(){
+showMedia(1, 'images/TV5509SPC.jpg');
+});
+var infospotkamaranak2A5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A5.position.set( 2294.50, -3207.61, 3067.69 );
+					infospotkamaranak2A5.visible = false;
+					kamaranak2A.add(infospotkamaranak2A5);
+infospotkamaranak2A5.addEventListener('click', function(){
+showMedia(1, 'images/TIX0136VA.jpg');
+});
+var infospotkamaranak2A6 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A6.position.set( 4306.54, -463.08, 2492.69 );
+					infospotkamaranak2A6.visible = false;
+					kamaranak2A.add(infospotkamaranak2A6);
+infospotkamaranak2A6.addEventListener('click', function(){
+showMedia(1, 'images/TH061SB.jpg');
+});
+var infospotkamaranak2A7 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2A7.position.set( 4077.64, -1506.97, 2459.80 );
+					infospotkamaranak2A7.visible = false;
+					kamaranak2A.add(infospotkamaranak2A7);
+infospotkamaranak2A7.addEventListener('click', function(){
+showMedia(1, 'images/TH889NT.jpg');
+});
+viewer.add( kamaranak2A );
+var kamaranak2B = new PANOLENS.ImagePanorama( "panoramas/kamaranak2B.jpg" );
+			kamaranak2B.addEventListener('progress', onProgress);
+			kamaranak2B.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamaranak2B.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamaranak2B.addEventListener('click', function(e){
+			});
+
+var infospotkamaranak2B0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2B0.position.set( -3411.52, -1689.66, 3228.92 );
+					infospotkamaranak2B0.visible = false;
+					kamaranak2B.add(infospotkamaranak2B0);
+infospotkamaranak2B0.addEventListener('click', function(){
+ChangePanorama('bt1c1b');
+});
+var infospotkamaranak2B1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2B1.position.set( 3664.43, -1157.17, 3192.95 );
+					infospotkamaranak2B1.visible = false;
+					kamaranak2B.add(infospotkamaranak2B1);
+infospotkamaranak2B1.addEventListener('click', function(){
+ChangePanorama('kitchenA');
+});
+var infospotkamaranak2B2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamaranak2B2.position.set( 2464.92, -3055.61, 3083.66 );
+					infospotkamaranak2B2.visible = false;
+					kamaranak2B.add(infospotkamaranak2B2);
+infospotkamaranak2B2.addEventListener('click', function(){
+ChangePanorama('kamaranak2A');
+});
+viewer.add( kamaranak2B );
+var kamarutamaA = new PANOLENS.ImagePanorama( "panoramas/kamarutamaA.jpg" );
+			kamarutamaA.addEventListener('progress', onProgress);
+			kamarutamaA.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamarutamaA.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamarutamaA.addEventListener('click', function(e){
+			});
+
+var infospotkamarutamaA0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA0.position.set( 2361.52, -291.08, -4387.87 );
+					infospotkamarutamaA0.visible = false;
+					kamarutamaA.add(infospotkamarutamaA0);
+infospotkamarutamaA0.addEventListener('click', function(){
+ChangePanorama('bt3c11');
+});
+var infospotkamarutamaA1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA1.position.set( 3473.59, -1498.66, -3260.67 );
+					infospotkamarutamaA1.visible = false;
+					kamarutamaA.add(infospotkamarutamaA1);
+infospotkamarutamaA1.addEventListener('click', function(){
+ChangePanorama('kamarutamaC');
+});
+var infospotkamarutamaA2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA2.position.set( 4276.28, -1924.66, -1717.89 );
+					infospotkamarutamaA2.visible = false;
+					kamarutamaA.add(infospotkamarutamaA2);
+infospotkamarutamaA2.addEventListener('click', function(){
+ChangePanorama('kamarutamaB');
+});
+var infospotkamarutamaA3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA3.position.set( -3087.73, -3878.75, 613.01 );
+					infospotkamarutamaA3.visible = false;
+					kamarutamaA.add(infospotkamarutamaA3);
+infospotkamarutamaA3.addEventListener('click', function(){
+ChangePanorama('kitchenB');
+});
+var infospotkamarutamaA4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA4.position.set( 2212.49, -3088.43, -3239.45 );
+					infospotkamarutamaA4.visible = false;
+					kamarutamaA.add(infospotkamarutamaA4);
+infospotkamarutamaA4.addEventListener('click', function(){
+showMedia(1, 'images/TV5509SPC.jpg');
+});
+var infospotkamarutamaA5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaA5.position.set( 3821.25, 329.66, 3194.78 );
+					infospotkamarutamaA5.visible = false;
+					kamarutamaA.add(infospotkamarutamaA5);
+infospotkamarutamaA5.addEventListener('click', function(){
+showMedia(1, 'images/nobrand_nobrand_full01.jpg');
+});
+viewer.add( kamarutamaA );
+var kamarutamaB = new PANOLENS.ImagePanorama( "panoramas/kamarutamaB.jpg" );
+			kamarutamaB.addEventListener('progress', onProgress);
+			kamarutamaB.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamarutamaB.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamarutamaB.addEventListener('click', function(e){
+			});
+
+var infospotkamarutamaB0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB0.position.set( 1911.07, -1486.76, -4370.62 );
+					infospotkamarutamaB0.visible = false;
+					kamarutamaB.add(infospotkamarutamaB0);
+infospotkamarutamaB0.addEventListener('click', function(){
+ChangePanorama('kitchenB');
+});
+var infospotkamarutamaB1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB1.position.set( 460.40, -2665.06, 4201.99 );
+					infospotkamarutamaB1.visible = false;
+					kamarutamaB.add(infospotkamarutamaB1);
+infospotkamarutamaB1.addEventListener('click', function(){
+ChangePanorama('kamarutamaC');
+});
+var infospotkamarutamaB2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB2.position.set( 2005.22, -2818.58, -3602.10 );
+					infospotkamarutamaB2.visible = false;
+					kamarutamaB.add(infospotkamarutamaB2);
+infospotkamarutamaB2.addEventListener('click', function(){
+ChangePanorama('kamarutamaA');
+});
+var infospotkamarutamaB3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB3.position.set( 2900.53, -618.81, 4019.74 );
+					infospotkamarutamaB3.visible = false;
+					kamarutamaB.add(infospotkamarutamaB3);
+infospotkamarutamaB3.addEventListener('click', function(){
+ChangePanorama('bt3c11');
+});
+var infospotkamarutamaB4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB4.position.set( 4062.59, 74.68, -2906.58 );
+					infospotkamarutamaB4.visible = false;
+					kamarutamaB.add(infospotkamarutamaB4);
+infospotkamarutamaB4.addEventListener('click', function(){
+showMedia(1, 'images/TH061SB.jpg');
+});
+var infospotkamarutamaB5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB5.position.set( 4748.27, 1528.39, 223.69 );
+					infospotkamarutamaB5.visible = false;
+					kamarutamaB.add(infospotkamarutamaB5);
+infospotkamarutamaB5.addEventListener('click', function(){
+showMedia(1, 'images/TH233AC.jpg');
+});
+var infospotkamarutamaB6 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB6.position.set( -3912.25, 508.99, -3056.59 );
+					infospotkamarutamaB6.visible = false;
+					kamarutamaB.add(infospotkamarutamaB6);
+infospotkamarutamaB6.addEventListener('click', function(){
+showMedia(1, 'images/TH064SA.jpg');
+});
+var infospotkamarutamaB7 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB7.position.set( -3914.25, 67.01, 3096.32 );
+					infospotkamarutamaB7.visible = false;
+					kamarutamaB.add(infospotkamarutamaB7);
+infospotkamarutamaB7.addEventListener('click', function(){
+showMedia(1, 'images/TH233AC.jpg');
+});
+var infospotkamarutamaB8 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaB8.position.set( -3355.80, 70.33, 3701.67 );
+					infospotkamarutamaB8.visible = false;
+					kamarutamaB.add(infospotkamarutamaB8);
+infospotkamarutamaB8.addEventListener('click', function(){
+showMedia(1, 'images/TH615BR.jpg');
+});
+viewer.add( kamarutamaB );
+var kamarutamaC = new PANOLENS.ImagePanorama( "panoramas/kamarutamaC.jpg" );
+			kamarutamaC.addEventListener('progress', onProgress);
+			kamarutamaC.addEventListener('load', function(e){
+				endLoading();
+			});
+			kamarutamaC.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kamarutamaC.addEventListener('click', function(e){
+			});
+
+var infospotkamarutamaC0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaC0.position.set( 818.43, -1867.89, 4557.92 );
+					infospotkamarutamaC0.visible = false;
+					kamarutamaC.add(infospotkamarutamaC0);
+infospotkamarutamaC0.addEventListener('click', function(){
+ChangePanorama('kamarutamaB');
+});
+var infospotkamarutamaC1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaC1.position.set( -871.19, -662.00, 4869.55 );
+					infospotkamarutamaC1.visible = false;
+					kamarutamaC.add(infospotkamarutamaC1);
+infospotkamarutamaC1.addEventListener('click', function(){
+ChangePanorama('kitchenB');
+});
+var infospotkamarutamaC2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaC2.position.set( -994.99, -1652.85, 4608.57 );
+					infospotkamarutamaC2.visible = false;
+					kamarutamaC.add(infospotkamarutamaC2);
+infospotkamarutamaC2.addEventListener('click', function(){
+ChangePanorama('kamarutamaA');
+});
+var infospotkamarutamaC3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkamarutamaC3.position.set( -4870.45, -1093.80, -114.69 );
+					infospotkamarutamaC3.visible = false;
+					kamarutamaC.add(infospotkamarutamaC3);
+infospotkamarutamaC3.addEventListener('click', function(){
+ChangePanorama('bt3c11');
+});
+viewer.add( kamarutamaC );
+var ruangtamuBB = new PANOLENS.ImagePanorama( "panoramas/ruangtamuBB.jpg" );
+			ruangtamuBB.addEventListener('progress', onProgress);
+			ruangtamuBB.addEventListener('load', function(e){
+				endLoading();
+			});
+			ruangtamuBB.addEventListener('enter', function(e){
+				endLoading();
+			});
+			ruangtamuBB.addEventListener('click', function(e){
+			});
+
+var infospotruangtamuBB0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuBB0.position.set( -2963.58, -2282.23, 3316.01 );
+					infospotruangtamuBB0.visible = false;
+					ruangtamuBB.add(infospotruangtamuBB0);
+infospotruangtamuBB0.addEventListener('click', function(){
+ChangePanorama('ruangtamuA');
+});
+var infospotruangtamuBB1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuBB1.position.set( 4811.33, -1324.62, 117.01 );
+					infospotruangtamuBB1.visible = false;
+					ruangtamuBB.add(infospotruangtamuBB1);
+infospotruangtamuBB1.addEventListener('click', function(){
+ChangePanorama('kitchenA');
+});
+var infospotruangtamuBB2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuBB2.position.set( 4779.71, -484.64, 1352.29 );
+					infospotruangtamuBB2.visible = false;
+					ruangtamuBB.add(infospotruangtamuBB2);
+infospotruangtamuBB2.addEventListener('click', function(){
+ChangePanorama('kamaranak2A');
+});
+var infospotruangtamuBB3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuBB3.position.set( -1535.79, -454.71, 4734.20 );
+					infospotruangtamuBB3.visible = false;
+					ruangtamuBB.add(infospotruangtamuBB3);
+infospotruangtamuBB3.addEventListener('click', function(){
+ChangePanorama('kamaranak1A');
+});
+var infospotruangtamuBB4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuBB4.position.set( 909.17, -753.96, 4852.53 );
+					infospotruangtamuBB4.visible = false;
+					ruangtamuBB.add(infospotruangtamuBB4);
+infospotruangtamuBB4.addEventListener('click', function(){
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+});
+viewer.add( ruangtamuBB );
+var ruangtamuA = new PANOLENS.ImagePanorama( "panoramas/ruangtamuA.jpg" );
+			ruangtamuA.addEventListener('progress', onProgress);
+			ruangtamuA.addEventListener('load', function(e){
+				endLoading();
+			});
+			ruangtamuA.addEventListener('enter', function(e){
+				endLoading();
+			});
+			ruangtamuA.addEventListener('click', function(e){
+			});
+
+var infospotruangtamuA0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA0.position.set( 3492.26, -2020.48, 2939.33 );
+					infospotruangtamuA0.visible = false;
+					ruangtamuA.add(infospotruangtamuA0);
+infospotruangtamuA0.addEventListener('click', function(){
+ChangePanorama('ruangtamuBB');
+});
+var infospotruangtamuA1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA1.position.set( -4763.79, -1506.95, 42.85 );
+					infospotruangtamuA1.visible = false;
+					ruangtamuA.add(infospotruangtamuA1);
+infospotruangtamuA1.addEventListener('click', function(){
+ChangePanorama('kamaranak1A');
+});
+var infospotruangtamuA2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA2.position.set( 4631.70, -1652.72, -859.34 );
+					infospotruangtamuA2.visible = false;
+					ruangtamuA.add(infospotruangtamuA2);
+infospotruangtamuA2.addEventListener('click', function(){
+showMedia(1, 'images/solidsurface.jpg');
+});
+var infospotruangtamuA3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA3.position.set( 4610.35, -1917.08, -140.46 );
+					infospotruangtamuA3.visible = false;
+					ruangtamuA.add(infospotruangtamuA3);
+infospotruangtamuA3.addEventListener('click', function(){
+showMedia(1, 'images/TIX0136VA.jpg');
+showMedia(1, 'images/TIX0136VA.jpg');
+});
+var infospotruangtamuA4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA4.position.set( 4600.40, -1920.29, 301.94 );
+					infospotruangtamuA4.visible = false;
+					ruangtamuA.add(infospotruangtamuA4);
+infospotruangtamuA4.addEventListener('click', function(){
+showMedia(1, 'images/TVCABINET.jpg');
+});
+var infospotruangtamuA5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA5.position.set( 4637.66, 562.37, 1752.46 );
+					infospotruangtamuA5.visible = false;
+					ruangtamuA.add(infospotruangtamuA5);
+infospotruangtamuA5.addEventListener('click', function(){
+showMedia(1, 'images/TH022D.jpg');
+});
+var infospotruangtamuA6 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA6.position.set( 4819.26, 1241.69, 411.90 );
+					infospotruangtamuA6.visible = false;
+					ruangtamuA.add(infospotruangtamuA6);
+infospotruangtamuA6.addEventListener('click', function(){
+showMedia(1, 'images/TH061SB.jpg');
+showMedia(1, 'images/TH061SB.jpg');
+});
+var infospotruangtamuA7 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA7.position.set( 4638.43, 1146.98, 1463.69 );
+					infospotruangtamuA7.visible = false;
+					ruangtamuA.add(infospotruangtamuA7);
+infospotruangtamuA7.addEventListener('click', function(){
+showMedia(1, 'images/id111342077qukwlis5wop6huxq98.jpeg');
+});
+var infospotruangtamuA8 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA8.position.set( 4027.16, 2868.18, 697.81 );
+					infospotruangtamuA8.visible = false;
+					ruangtamuA.add(infospotruangtamuA8);
+infospotruangtamuA8.addEventListener('click', function(){
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+});
+var infospotruangtamuA9 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA9.position.set( 4157.43, 1972.17, 1942.16 );
+					infospotruangtamuA9.visible = false;
+					ruangtamuA.add(infospotruangtamuA9);
+infospotruangtamuA9.addEventListener('click', function(){
+showMedia(1, 'images/TH051AA.jpg');
+});
+var infospotruangtamuA10 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotruangtamuA10.position.set( 3879.79, -2548.07, 1842.48 );
+					infospotruangtamuA10.visible = false;
+					ruangtamuA.add(infospotruangtamuA10);
+infospotruangtamuA10.addEventListener('click', function(){
+showMedia(1, 'images/TV5520SPC.jpg');
+});
+viewer.add( ruangtamuA );
+var kitchenB = new PANOLENS.ImagePanorama( "panoramas/kitchenB.jpg" );
+			kitchenB.addEventListener('progress', onProgress);
+			kitchenB.addEventListener('load', function(e){
+				endLoading();
+			});
+			kitchenB.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kitchenB.addEventListener('click', function(e){
+			});
+
+var infospotkitchenB0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB0.position.set( -3173.47, -2675.01, 2779.81 );
+					infospotkitchenB0.visible = false;
+					kitchenB.add(infospotkitchenB0);
+infospotkitchenB0.addEventListener('click', function(){
+ChangePanorama('kitchenc');
+});
+var infospotkitchenB1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB1.position.set( 3899.38, -2724.24, 1513.55 );
+					infospotkitchenB1.visible = false;
+					kitchenB.add(infospotkitchenB1);
+infospotkitchenB1.addEventListener('click', function(){
+ChangePanorama('kitchenA');
+});
+var infospotkitchenB2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB2.position.set( -4222.09, -1441.13, -2238.23 );
+					infospotkitchenB2.visible = false;
+					kitchenB.add(infospotkitchenB2);
+infospotkitchenB2.addEventListener('click', function(){
+ChangePanorama('kamarutamaA');
+});
+var infospotkitchenB3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB3.position.set( -4407.38, -399.33, 2312.64 );
+					infospotkitchenB3.visible = false;
+					kitchenB.add(infospotkitchenB3);
+infospotkitchenB3.addEventListener('click', function(){
+ChangePanorama('bt3c11Pqp0X');
+});
+var infospotkitchenB4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB4.position.set( -166.41, 1224.76, 4836.90 );
+					infospotkitchenB4.visible = false;
+					kitchenB.add(infospotkitchenB4);
+infospotkitchenB4.addEventListener('click', function(){
+showMedia(1, 'images/TH061SB.jpg');
+});
+var infospotkitchenB5 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB5.position.set( -2341.94, -1666.69, 4086.11 );
+					infospotkitchenB5.visible = false;
+					kitchenB.add(infospotkitchenB5);
+infospotkitchenB5.addEventListener('click', function(){
+showMedia(1, 'images/TH234AC.jpg');
+});
+var infospotkitchenB6 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB6.position.set( 793.38, 1006.54, 4822.36 );
+					infospotkitchenB6.visible = false;
+					kitchenB.add(infospotkitchenB6);
+infospotkitchenB6.addEventListener('click', function(){
+showMedia(1, 'images/FA128.png');
+});
+var infospotkitchenB7 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB7.position.set( -3340.79, 1201.70, 3511.75 );
+					infospotkitchenB7.visible = false;
+					kitchenB.add(infospotkitchenB7);
+infospotkitchenB7.addEventListener('click', function(){
+showMedia(1, 'images/RULAM241.jpg');
+});
+var infospotkitchenB8 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenB8.position.set( -2436.07, -1061.56, 4231.42 );
+					infospotkitchenB8.visible = false;
+					kitchenB.add(infospotkitchenB8);
+infospotkitchenB8.addEventListener('click', function(){
+showMedia(1, 'images/solidsurface.jpg');
+});
+viewer.add( kitchenB );
+var kitchenA = new PANOLENS.ImagePanorama( "panoramas/kitchenA.jpg" );
+			kitchenA.addEventListener('progress', onProgress);
+			kitchenA.addEventListener('load', function(e){
+				endLoading();
+			});
+			kitchenA.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kitchenA.addEventListener('click', function(e){
+			});
+
+var infospotkitchenA0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenA0.position.set( 4819.98, -1305.78, -53.24 );
+					infospotkitchenA0.visible = false;
+					kitchenA.add(infospotkitchenA0);
+infospotkitchenA0.addEventListener('click', function(){
+ChangePanorama('ruangtamuBB');
+});
+var infospotkitchenA1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenA1.position.set( 4295.61, -951.90, -2358.08 );
+					infospotkitchenA1.visible = false;
+					kitchenA.add(infospotkitchenA1);
+infospotkitchenA1.addEventListener('click', function(){
+ChangePanorama('kamaranak2A');
+});
+var infospotkitchenA2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenA2.position.set( -3050.90, -2655.02, -2929.78 );
+					infospotkitchenA2.visible = false;
+					kitchenA.add(infospotkitchenA2);
+infospotkitchenA2.addEventListener('click', function(){
+ChangePanorama('kitchenB');
+});
+var infospotkitchenA3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenA3.position.set( -3309.47, -682.08, -3681.14 );
+					infospotkitchenA3.visible = false;
+					kitchenA.add(infospotkitchenA3);
+infospotkitchenA3.addEventListener('click', function(){
+ChangePanorama('kamarutamaA');
+});
+var infospotkitchenA4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenA4.position.set( -4725.49, -1506.73, -589.75 );
+					infospotkitchenA4.visible = false;
+					kitchenA.add(infospotkitchenA4);
+infospotkitchenA4.addEventListener('click', function(){
+ChangePanorama('kitchenc');
+});
+viewer.add( kitchenA );
+var kitchenc = new PANOLENS.ImagePanorama( "panoramas/kitchenc.jpg" );
+			kitchenc.addEventListener('progress', onProgress);
+			kitchenc.addEventListener('load', function(e){
+				endLoading();
+			});
+			kitchenc.addEventListener('enter', function(e){
+				endLoading();
+			});
+			kitchenc.addEventListener('click', function(e){
+			});
+
+var infospotkitchenc0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenc0.position.set( 2387.48, -983.51, -4273.58 );
+					infospotkitchenc0.visible = false;
+					kitchenc.add(infospotkitchenc0);
+infospotkitchenc0.addEventListener('click', function(){
+ChangePanorama('kamarutamaA');
+});
+var infospotkitchenc1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenc1.position.set( 3816.98, -2434.12, -2106.12 );
+					infospotkitchenc1.visible = false;
+					kitchenc.add(infospotkitchenc1);
+infospotkitchenc1.addEventListener('click', function(){
+ChangePanorama('kitchenB');
+});
+var infospotkitchenc2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenc2.position.set( 4935.43, -776.68, 69.91 );
+					infospotkitchenc2.visible = false;
+					kitchenc.add(infospotkitchenc2);
+infospotkitchenc2.addEventListener('click', function(){
+ChangePanorama('ruangtamuBB');
+});
+var infospotkitchenc3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotkitchenc3.position.set( -4742.78, -1121.12, -1094.11 );
+					infospotkitchenc3.visible = false;
+					kitchenc.add(infospotkitchenc3);
+infospotkitchenc3.addEventListener('click', function(){
+ChangePanorama('bt3c11Pqp0X');
+});
+viewer.add( kitchenc );
+var bt1 = new PANOLENS.ImagePanorama( "panoramas/bt1.jpg" );
+			bt1.addEventListener('progress', onProgress);
+			bt1.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt1.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt1.addEventListener('click', function(e){
+			});
+
+var infospotbt10 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt10.position.set( -2383.96, -4118.96, -1514.99 );
+					infospotbt10.visible = false;
+					bt1.add(infospotbt10);
+infospotbt10.addEventListener('click', function(){
+ChangePanorama('kamaranak1B');
+});
+var infospotbt11 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt11.position.set( 3314.29, -3725.97, -290.66 );
+					infospotbt11.visible = false;
+					bt1.add(infospotbt11);
+infospotbt11.addEventListener('click', function(){
+ChangePanorama('bt22');
+});
+var infospotbt12 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt12.position.set( 2734.72, 155.69, -4170.41 );
+					infospotbt12.visible = false;
+					bt1.add(infospotbt12);
+infospotbt12.addEventListener('click', function(){
+showMedia(1, 'images/42c3251025ed443288811465be0898b9.jpeg');
+});
+var infospotbt13 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt13.position.set( 4646.17, -286.59, 1797.96 );
+					infospotbt13.visible = false;
+					bt1.add(infospotbt13);
+infospotbt13.addEventListener('click', function(){
+showMedia(1, 'images/id111342077r98rlpj8aw3lbrcna1.jpeg');
+});
+viewer.add( bt1 );
+var bt22 = new PANOLENS.ImagePanorama( "panoramas/bt22.jpg" );
+			bt22.addEventListener('progress', onProgress);
+			bt22.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt22.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt22.addEventListener('click', function(e){
+			});
+
+var infospotbt220 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt220.position.set( 3035.78, -3937.51, -465.10 );
+					infospotbt220.visible = false;
+					bt22.add(infospotbt220);
+infospotbt220.addEventListener('click', function(){
+ChangePanorama('bt1');
+});
+var infospotbt221 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt221.position.set( 4852.97, -1181.02, -95.16 );
+					infospotbt221.visible = false;
+					bt22.add(infospotbt221);
+infospotbt221.addEventListener('click', function(){
+ChangePanorama('kamaranak1B');
+});
+viewer.add( bt22 );
+var bt1c1b = new PANOLENS.ImagePanorama( "panoramas/bt1c1b.jpg" );
+			bt1c1b.addEventListener('progress', onProgress);
+			bt1c1b.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt1c1b.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt1c1b.addEventListener('click', function(e){
+			});
+
+var infospotbt1c1b0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt1c1b0.position.set( -2598.28, -2968.36, -3064.06 );
+					infospotbt1c1b0.visible = false;
+					bt1c1b.add(infospotbt1c1b0);
+infospotbt1c1b0.addEventListener('click', function(){
+ChangePanorama('kamaranak2A');
+});
+var infospotbt1c1b1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt1c1b1.position.set( 939.34, -3905.59, 2969.67 );
+					infospotbt1c1b1.visible = false;
+					bt1c1b.add(infospotbt1c1b1);
+infospotbt1c1b1.addEventListener('click', function(){
+ChangePanorama('bt2c22');
+});
+var infospotbt1c1b2 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt1c1b2.position.set( 2709.97, -1433.32, 3939.91 );
+					infospotbt1c1b2.visible = false;
+					bt1c1b.add(infospotbt1c1b2);
+infospotbt1c1b2.addEventListener('click', function(){
+showMedia(1, 'images/id111342077r98rlpj8aw3lbrcna1.jpeg');
+});
+var infospotbt1c1b3 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt1c1b3.position.set( 349.86, -4280.02, 2555.66 );
+					infospotbt1c1b3.visible = false;
+					bt1c1b.add(infospotbt1c1b3);
+infospotbt1c1b3.addEventListener('click', function(){
+showMedia(1, 'images/id111342017r98wltgjr1zzaw7706.jpeg');
+});
+var infospotbt1c1b4 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt1c1b4.position.set( 4555.55, 269.82, 2034.27 );
+					infospotbt1c1b4.visible = false;
+					bt1c1b.add(infospotbt1c1b4);
+infospotbt1c1b4.addEventListener('click', function(){
+showMedia(1, 'images/ebc4e415851042529b88a7f53c4c955c.jpg');
+});
+viewer.add( bt1c1b );
+var bt2c22 = new PANOLENS.ImagePanorama( "panoramas/bt2c22.jpg" );
+			bt2c22.addEventListener('progress', onProgress);
+			bt2c22.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt2c22.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt2c22.addEventListener('click', function(e){
+			});
+
+var infospotbt2c220 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt2c220.position.set( 4274.17, -787.90, -2471.21 );
+					infospotbt2c220.visible = false;
+					bt2c22.add(infospotbt2c220);
+infospotbt2c220.addEventListener('click', function(){
+ChangePanorama('kamaranak2A');
+});
+var infospotbt2c221 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt2c221.position.set( 3065.12, -3709.93, -1341.50 );
+					infospotbt2c221.visible = false;
+					bt2c22.add(infospotbt2c221);
+infospotbt2c221.addEventListener('click', function(){
+ChangePanorama('bt1c1b');
+});
+viewer.add( bt2c22 );
+var bt3c11 = new PANOLENS.ImagePanorama( "panoramas/bt3c11.jpg" );
+			bt3c11.addEventListener('progress', onProgress);
+			bt3c11.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt3c11.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt3c11.addEventListener('click', function(e){
+			});
+
+var infospotbt3c110 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c110.position.set( -2413.90, -3949.36, -1875.37 );
+					infospotbt3c110.visible = false;
+					bt3c11.add(infospotbt3c110);
+infospotbt3c110.addEventListener('click', function(){
+ChangePanorama('kamarutamaC');
+});
+var infospotbt3c111 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c111.position.set( 3077.97, -3254.65, -2219.03 );
+					infospotbt3c111.visible = false;
+					bt3c11.add(infospotbt3c111);
+infospotbt3c111.addEventListener('click', function(){
+ChangePanorama('bt3c22');
+});
+var infospotbt3c112 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c112.position.set( 1979.50, -4588.72, 8.76 );
+					infospotbt3c112.visible = false;
+					bt3c11.add(infospotbt3c112);
+infospotbt3c112.addEventListener('click', function(){
+showMedia(1, 'images/id111342077r98xlvsayoiamq7tb4.jpeg');
+});
+var infospotbt3c113 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c113.position.set( 3939.56, -2139.51, -2200.05 );
+					infospotbt3c113.visible = false;
+					bt3c11.add(infospotbt3c113);
+infospotbt3c113.addEventListener('click', function(){
+showMedia(1, 'images/9f97fc5e4179569dc6ab3c2a7202849b.jpg_720x720q80.jpg');
+});
+var infospotbt3c114 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c114.position.set( 4524.83, -192.28, 2101.26 );
+					infospotbt3c114.visible = false;
+					bt3c11.add(infospotbt3c114);
+infospotbt3c114.addEventListener('click', function(){
+showMedia(1, 'images/42c3251025ed443288811465be0898b9.jpeg');
+});
+viewer.add( bt3c11 );
+var bt3c22 = new PANOLENS.ImagePanorama( "panoramas/bt3c22.jpg" );
+			bt3c22.addEventListener('progress', onProgress);
+			bt3c22.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt3c22.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt3c22.addEventListener('click', function(e){
+			});
+
+var infospotbt3c220 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c220.position.set( 4435.90, -1097.78, -2018.91 );
+					infospotbt3c220.visible = false;
+					bt3c22.add(infospotbt3c220);
+infospotbt3c220.addEventListener('click', function(){
+ChangePanorama('kamarutamaC');
+});
+var infospotbt3c221 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c221.position.set( 2599.76, -3868.74, -1795.57 );
+					infospotbt3c221.visible = false;
+					bt3c22.add(infospotbt3c221);
+infospotbt3c221.addEventListener('click', function(){
+ChangePanorama('bt3c11');
+});
+viewer.add( bt3c22 );
+var bt3c11Pqp0X = new PANOLENS.ImagePanorama( "panoramas/bt3c11Pqp0X.jpg" );
+			bt3c11Pqp0X.addEventListener('progress', onProgress);
+			bt3c11Pqp0X.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt3c11Pqp0X.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt3c11Pqp0X.addEventListener('click', function(e){
+			});
+
+var infospotbt3c11Pqp0X0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c11Pqp0X0.position.set( 3026.09, -3314.73, -2197.11 );
+					infospotbt3c11Pqp0X0.visible = false;
+					bt3c11Pqp0X.add(infospotbt3c11Pqp0X0);
+infospotbt3c11Pqp0X0.addEventListener('click', function(){
+ChangePanorama('bt3c22uIrNg');
+});
+var infospotbt3c11Pqp0X1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c11Pqp0X1.position.set( -2470.30, -3958.18, -1786.92 );
+					infospotbt3c11Pqp0X1.visible = false;
+					bt3c11Pqp0X.add(infospotbt3c11Pqp0X1);
+infospotbt3c11Pqp0X1.addEventListener('click', function(){
+ChangePanorama('kitchenc');
+});
+viewer.add( bt3c11Pqp0X );
+var bt3c22uIrNg = new PANOLENS.ImagePanorama( "panoramas/bt3c22uIrNg.jpg" );
+			bt3c22uIrNg.addEventListener('progress', onProgress);
+			bt3c22uIrNg.addEventListener('load', function(e){
+				endLoading();
+			});
+			bt3c22uIrNg.addEventListener('enter', function(e){
+				endLoading();
+			});
+			bt3c22uIrNg.addEventListener('click', function(e){
+			});
+
+var infospotbt3c22uIrNg0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c22uIrNg0.position.set( 2716.00, -3777.94, -1819.52 );
+					infospotbt3c22uIrNg0.visible = false;
+					bt3c22uIrNg.add(infospotbt3c22uIrNg0);
+infospotbt3c22uIrNg0.addEventListener('click', function(){
+ChangePanorama('bt3c11Pqp0X');
+});
+var infospotbt3c22uIrNg1 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotbt3c22uIrNg1.position.set( 4408.45, -1107.32, -2068.60 );
+					infospotbt3c22uIrNg1.visible = false;
+					bt3c22uIrNg.add(infospotbt3c22uIrNg1);
+infospotbt3c22uIrNg1.addEventListener('click', function(){
+ChangePanorama('kitchenc');
+});
+viewer.add( bt3c22uIrNg );
+$(document).ready(function(){ ChangePanorama('bt3c11'); });
+
+/*panoramas-end*/
+            
+			var stilloading = true;
+			function onProgress ( event ) {
+				
+				progress = event.progress.loaded / event.progress.total * 100;
+				console.log("Loading panorama: " + progress + " ... ");
+				$("#loadingperc").html(Math.ceil(progress) + "%");
+				if(Math.ceil(progress) >= 100){
+					endLoading();
+					stilloading = false;
+
+				}else{
+				    clearTimeout(elTimer);
+					stilloading = true;
+					$("#loading").show();
+				}
+			}
+			
+			var elTimer;
+			function endLoading(){
+			    clearTimeout(elTimer);
+				if(stilloading == false){
+					elTimer = setTimeout(function(){
+						$("#loading").fadeOut();
+					}, 750);
+					
+				}
+			}
+			
+			function hideTemp(){
+				$("#tmp").fadeOut();
+				setTimeout(function(){
+					$("#tmpcontent").html("");
+				},1000);
+			}
+			
+			function showMedia(type, content){
+				switch(type){
+					case 1 :
+						//Image
+						$("#tmpcontent").html("<img src='"+content+"' style='width: 100%;'>");
+						$("#tmp").fadeIn();
+						break;
+					case 2 :
+						//Video
+						$("#tmpcontent").html("<video id='webvideo' controls autoplay style='width: 100%; height: 100%;'><source src='" +content+ "' type='video/mp4'> Your browser does not support the video tag. </video>");
+						$("#tmp").fadeIn();
+						break;
+					case 3 :
+						//Audio
+						$("#tmpcontent").html("<audio controls style='width: 100%;'><source src='"+content+"' type='audio/ogg'>Your browser does not support the audio tag.</audio>");
+						$("#tmp").fadeIn();
+						break;
+					case 4 :
+						//PDF
+						$("#tmpcontent").html("<iframe src='pdfjs/web/viewer.html?file=../../"+content+"' style='width: 100%; height: 99%;'></iframe>");
+						$("#tmp").fadeIn();
+						break;
+				}
+			}
+			
+			
+			
+			//Update Callback
+			viewer.addUpdateCallback(function(){
+				
+				/*viewerupdatecallback*/
+if(viewer.panorama == kamaranak1A){
+ShowMyInfospot(infospotkamaranak1A0, 'infospotkamaranak1A0');
+ShowMyInfospot(infospotkamaranak1A1, 'infospotkamaranak1A1');
+ShowMyInfospot(infospotkamaranak1A2, 'infospotkamaranak1A2');
+ShowMyInfospot(infospotkamaranak1A3, 'infospotkamaranak1A3');
+ShowMyInfospot(infospotkamaranak1A4, 'infospotkamaranak1A4');
+ShowMyInfospot(infospotkamaranak1A5, 'infospotkamaranak1A5');
+ShowMyInfospot(infospotkamaranak1A6, 'infospotkamaranak1A6');
+}
+
+if(viewer.panorama == kamaranak1B){
+ShowMyInfospot(infospotkamaranak1B0, 'infospotkamaranak1B0');
+ShowMyInfospot(infospotkamaranak1B1, 'infospotkamaranak1B1');
+ShowMyInfospot(infospotkamaranak1B2, 'infospotkamaranak1B2');
+}
+
+if(viewer.panorama == kamaranak2A){
+ShowMyInfospot(infospotkamaranak2A0, 'infospotkamaranak2A0');
+ShowMyInfospot(infospotkamaranak2A1, 'infospotkamaranak2A1');
+ShowMyInfospot(infospotkamaranak2A2, 'infospotkamaranak2A2');
+ShowMyInfospot(infospotkamaranak2A3, 'infospotkamaranak2A3');
+ShowMyInfospot(infospotkamaranak2A4, 'infospotkamaranak2A4');
+ShowMyInfospot(infospotkamaranak2A5, 'infospotkamaranak2A5');
+ShowMyInfospot(infospotkamaranak2A6, 'infospotkamaranak2A6');
+ShowMyInfospot(infospotkamaranak2A7, 'infospotkamaranak2A7');
+}
+
+if(viewer.panorama == kamaranak2B){
+ShowMyInfospot(infospotkamaranak2B0, 'infospotkamaranak2B0');
+ShowMyInfospot(infospotkamaranak2B1, 'infospotkamaranak2B1');
+ShowMyInfospot(infospotkamaranak2B2, 'infospotkamaranak2B2');
+}
+
+if(viewer.panorama == kamarutamaA){
+ShowMyInfospot(infospotkamarutamaA0, 'infospotkamarutamaA0');
+ShowMyInfospot(infospotkamarutamaA1, 'infospotkamarutamaA1');
+ShowMyInfospot(infospotkamarutamaA2, 'infospotkamarutamaA2');
+ShowMyInfospot(infospotkamarutamaA3, 'infospotkamarutamaA3');
+ShowMyInfospot(infospotkamarutamaA4, 'infospotkamarutamaA4');
+ShowMyInfospot(infospotkamarutamaA5, 'infospotkamarutamaA5');
+}
+
+if(viewer.panorama == kamarutamaB){
+ShowMyInfospot(infospotkamarutamaB0, 'infospotkamarutamaB0');
+ShowMyInfospot(infospotkamarutamaB1, 'infospotkamarutamaB1');
+ShowMyInfospot(infospotkamarutamaB2, 'infospotkamarutamaB2');
+ShowMyInfospot(infospotkamarutamaB3, 'infospotkamarutamaB3');
+ShowMyInfospot(infospotkamarutamaB4, 'infospotkamarutamaB4');
+ShowMyInfospot(infospotkamarutamaB5, 'infospotkamarutamaB5');
+ShowMyInfospot(infospotkamarutamaB6, 'infospotkamarutamaB6');
+ShowMyInfospot(infospotkamarutamaB7, 'infospotkamarutamaB7');
+ShowMyInfospot(infospotkamarutamaB8, 'infospotkamarutamaB8');
+}
+
+if(viewer.panorama == kamarutamaC){
+ShowMyInfospot(infospotkamarutamaC0, 'infospotkamarutamaC0');
+ShowMyInfospot(infospotkamarutamaC1, 'infospotkamarutamaC1');
+ShowMyInfospot(infospotkamarutamaC2, 'infospotkamarutamaC2');
+ShowMyInfospot(infospotkamarutamaC3, 'infospotkamarutamaC3');
+}
+
+if(viewer.panorama == ruangtamuBB){
+ShowMyInfospot(infospotruangtamuBB0, 'infospotruangtamuBB0');
+ShowMyInfospot(infospotruangtamuBB1, 'infospotruangtamuBB1');
+ShowMyInfospot(infospotruangtamuBB2, 'infospotruangtamuBB2');
+ShowMyInfospot(infospotruangtamuBB3, 'infospotruangtamuBB3');
+ShowMyInfospot(infospotruangtamuBB4, 'infospotruangtamuBB4');
+}
+
+if(viewer.panorama == ruangtamuA){
+ShowMyInfospot(infospotruangtamuA0, 'infospotruangtamuA0');
+ShowMyInfospot(infospotruangtamuA1, 'infospotruangtamuA1');
+ShowMyInfospot(infospotruangtamuA2, 'infospotruangtamuA2');
+ShowMyInfospot(infospotruangtamuA3, 'infospotruangtamuA3');
+ShowMyInfospot(infospotruangtamuA4, 'infospotruangtamuA4');
+ShowMyInfospot(infospotruangtamuA5, 'infospotruangtamuA5');
+ShowMyInfospot(infospotruangtamuA6, 'infospotruangtamuA6');
+ShowMyInfospot(infospotruangtamuA7, 'infospotruangtamuA7');
+ShowMyInfospot(infospotruangtamuA8, 'infospotruangtamuA8');
+ShowMyInfospot(infospotruangtamuA9, 'infospotruangtamuA9');
+ShowMyInfospot(infospotruangtamuA10, 'infospotruangtamuA10');
+}
+
+if(viewer.panorama == kitchenB){
+ShowMyInfospot(infospotkitchenB0, 'infospotkitchenB0');
+ShowMyInfospot(infospotkitchenB1, 'infospotkitchenB1');
+ShowMyInfospot(infospotkitchenB2, 'infospotkitchenB2');
+ShowMyInfospot(infospotkitchenB3, 'infospotkitchenB3');
+ShowMyInfospot(infospotkitchenB4, 'infospotkitchenB4');
+ShowMyInfospot(infospotkitchenB5, 'infospotkitchenB5');
+ShowMyInfospot(infospotkitchenB6, 'infospotkitchenB6');
+ShowMyInfospot(infospotkitchenB7, 'infospotkitchenB7');
+ShowMyInfospot(infospotkitchenB8, 'infospotkitchenB8');
+}
+
+if(viewer.panorama == kitchenA){
+ShowMyInfospot(infospotkitchenA0, 'infospotkitchenA0');
+ShowMyInfospot(infospotkitchenA1, 'infospotkitchenA1');
+ShowMyInfospot(infospotkitchenA2, 'infospotkitchenA2');
+ShowMyInfospot(infospotkitchenA3, 'infospotkitchenA3');
+ShowMyInfospot(infospotkitchenA4, 'infospotkitchenA4');
+}
+
+if(viewer.panorama == kitchenc){
+ShowMyInfospot(infospotkitchenc0, 'infospotkitchenc0');
+ShowMyInfospot(infospotkitchenc1, 'infospotkitchenc1');
+ShowMyInfospot(infospotkitchenc2, 'infospotkitchenc2');
+ShowMyInfospot(infospotkitchenc3, 'infospotkitchenc3');
+}
+
+if(viewer.panorama == bt1){
+ShowMyInfospot(infospotbt10, 'infospotbt10');
+ShowMyInfospot(infospotbt11, 'infospotbt11');
+ShowMyInfospot(infospotbt12, 'infospotbt12');
+ShowMyInfospot(infospotbt13, 'infospotbt13');
+}
+
+if(viewer.panorama == bt22){
+ShowMyInfospot(infospotbt220, 'infospotbt220');
+ShowMyInfospot(infospotbt221, 'infospotbt221');
+}
+
+if(viewer.panorama == bt1c1b){
+ShowMyInfospot(infospotbt1c1b0, 'infospotbt1c1b0');
+ShowMyInfospot(infospotbt1c1b1, 'infospotbt1c1b1');
+ShowMyInfospot(infospotbt1c1b2, 'infospotbt1c1b2');
+ShowMyInfospot(infospotbt1c1b3, 'infospotbt1c1b3');
+ShowMyInfospot(infospotbt1c1b4, 'infospotbt1c1b4');
+}
+
+if(viewer.panorama == bt2c22){
+ShowMyInfospot(infospotbt2c220, 'infospotbt2c220');
+ShowMyInfospot(infospotbt2c221, 'infospotbt2c221');
+}
+
+if(viewer.panorama == bt3c11){
+ShowMyInfospot(infospotbt3c110, 'infospotbt3c110');
+ShowMyInfospot(infospotbt3c111, 'infospotbt3c111');
+ShowMyInfospot(infospotbt3c112, 'infospotbt3c112');
+ShowMyInfospot(infospotbt3c113, 'infospotbt3c113');
+ShowMyInfospot(infospotbt3c114, 'infospotbt3c114');
+}
+
+if(viewer.panorama == bt3c22){
+ShowMyInfospot(infospotbt3c220, 'infospotbt3c220');
+ShowMyInfospot(infospotbt3c221, 'infospotbt3c221');
+}
+
+if(viewer.panorama == bt3c11Pqp0X){
+ShowMyInfospot(infospotbt3c11Pqp0X0, 'infospotbt3c11Pqp0X0');
+ShowMyInfospot(infospotbt3c11Pqp0X1, 'infospotbt3c11Pqp0X1');
+}
+
+if(viewer.panorama == bt3c22uIrNg){
+ShowMyInfospot(infospotbt3c22uIrNg0, 'infospotbt3c22uIrNg0');
+ShowMyInfospot(infospotbt3c22uIrNg1, 'infospotbt3c22uIrNg1');
+}
+/*viewerupdatecallback-end*/
+				
+				
+			});
+			
+			
+			
+			var hotspotsvisible = true;
+			function ShowMyInfospot(hs, elid){
+				var thehs = toScreenPosition(hs);
+				if(thehs.z < 1){
+					$("#" + elid).css({
+						"top" : (thehs.y - ($("#" + elid).height()/2)) + "px",
+						"left" : (thehs.x - ($("#" + elid).width()/2)) + "px",
+					});
+					if(hotspotsvisible)
+						$("#" + elid).show();
+				}else{
+					$("#" + elid).hide();
+				}
+				
+			}
+			
+			function toScreenPosition(obj)
+			{
+				var vector = new THREE.Vector3();
+				var widthHalf = 0.5 * innerWidth;
+				var heightHalf = 0.5 * innerHeight;
+				
+				//obj.updateMatrixWorld();				
+				vector.setFromMatrixPosition(obj.matrixWorld);
+				
+				
+				vector.project(viewer.camera);
+
+				vector.x = ( vector.x * widthHalf ) + widthHalf;
+				vector.y = - ( vector.y * heightHalf ) + heightHalf;
+
+				
+				return { 
+					x: vector.x,
+					y: vector.y,
+					z: vector.z,
+				};
+
+			};
+			
+			var currentPanorama;
+			function ChangePanorama(panorama){
+			if(panorama != currentPanorama){
+				currentPanorama = panorama;
+				HideInfospots(); 
+				$("#loading").fadeIn();
+				//$(".customhotspot").fadeOut();
+				setTimeout(function(){
+					viewer.setPanorama(window[panorama]);
+				}, 100);
+				setTimeout(function(){
+					$("#" + panorama).fadeIn();
+				}, 1000);
+			}
+		}
+			
+			
+			
+			
+			
+			function HideInfospots(){
+				$(".customhotspot").fadeOut();
+			}
+
+			/*customjs*/
+function chclickinfospotkamaranak1A0(){ 
+ChangePanorama('ruangtamuA');
+}
+
+function chclickinfospotkamaranak1A1(){ 
+ChangePanorama('bt1');
+}
+
+function chclickinfospotkamaranak1A2(){ 
+ChangePanorama('kamaranak1B');
+}
+
+function chclickinfospotkamaranak1A3(){ 
+showMedia(1, 'images/FA128.png');
+}
+
+function chclickinfospotkamaranak1A4(){ 
+showMedia(1, 'images/TH073SB.jpg');
+}
+
+function chclickinfospotkamaranak1A5(){ 
+showMedia(1, 'images/TH061SB.jpg');
+}
+
+function chclickinfospotkamaranak1A6(){ 
+showMedia(1, 'images/TV5509SPC.jpg');
+}
+
+function chclickinfospotkamaranak1B0(){ 
+ChangePanorama('bt1');
+}
+
+function chclickinfospotkamaranak1B1(){ 
+ChangePanorama('kamaranak1A');
+}
+
+function chclickinfospotkamaranak1B2(){ 
+ChangePanorama('ruangtamuA');
+}
+
+function chclickinfospotkamaranak2A0(){ 
+ChangePanorama('kamaranak2B');
+}
+
+function chclickinfospotkamaranak2A1(){ 
+ChangePanorama('bt1c1b');
+}
+
+function chclickinfospotkamaranak2A2(){ 
+ChangePanorama('kitchenA');
+}
+
+function chclickinfospotkamaranak2A3(){ 
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+}
+
+function chclickinfospotkamaranak2A4(){ 
+showMedia(1, 'images/TV5509SPC.jpg');
+}
+
+function chclickinfospotkamaranak2A5(){ 
+showMedia(1, 'images/TIX0136VA.jpg');
+}
+
+function chclickinfospotkamaranak2A6(){ 
+showMedia(1, 'images/TH061SB.jpg');
+}
+
+function chclickinfospotkamaranak2A7(){ 
+showMedia(1, 'images/TH889NT.jpg');
+}
+
+function chclickinfospotkamaranak2B0(){ 
+ChangePanorama('bt1c1b');
+}
+
+function chclickinfospotkamaranak2B1(){ 
+ChangePanorama('kitchenA');
+}
+
+function chclickinfospotkamaranak2B2(){ 
+ChangePanorama('kamaranak2A');
+}
+
+function chclickinfospotkamarutamaA0(){ 
+ChangePanorama('bt3c11');
+}
+
+function chclickinfospotkamarutamaA1(){ 
+ChangePanorama('kamarutamaC');
+}
+
+function chclickinfospotkamarutamaA2(){ 
+ChangePanorama('kamarutamaB');
+}
+
+function chclickinfospotkamarutamaA3(){ 
+ChangePanorama('kitchenB');
+}
+
+function chclickinfospotkamarutamaA4(){ 
+showMedia(1, 'images/TV5509SPC.jpg');
+}
+
+function chclickinfospotkamarutamaA5(){ 
+showMedia(1, 'images/nobrand_nobrand_full01.jpg');
+}
+
+function chclickinfospotkamarutamaB0(){ 
+ChangePanorama('kitchenB');
+}
+
+function chclickinfospotkamarutamaB1(){ 
+ChangePanorama('kamarutamaC');
+}
+
+function chclickinfospotkamarutamaB2(){ 
+ChangePanorama('kamarutamaA');
+}
+
+function chclickinfospotkamarutamaB3(){ 
+ChangePanorama('bt3c11');
+}
+
+function chclickinfospotkamarutamaB4(){ 
+showMedia(1, 'images/TH061SB.jpg');
+}
+
+function chclickinfospotkamarutamaB5(){ 
+showMedia(1, 'images/TH233AC.jpg');
+}
+
+function chclickinfospotkamarutamaB6(){ 
+showMedia(1, 'images/TH064SA.jpg');
+}
+
+function chclickinfospotkamarutamaB7(){ 
+showMedia(1, 'images/TH233AC.jpg');
+}
+
+function chclickinfospotkamarutamaB8(){ 
+showMedia(1, 'images/TH615BR.jpg');
+}
+
+function chclickinfospotkamarutamaC0(){ 
+ChangePanorama('kamarutamaB');
+}
+
+function chclickinfospotkamarutamaC1(){ 
+ChangePanorama('kitchenB');
+}
+
+function chclickinfospotkamarutamaC2(){ 
+ChangePanorama('kamarutamaA');
+}
+
+function chclickinfospotkamarutamaC3(){ 
+ChangePanorama('bt3c11');
+}
+
+function chclickinfospotruangtamuBB0(){ 
+ChangePanorama('ruangtamuA');
+}
+
+function chclickinfospotruangtamuBB1(){ 
+ChangePanorama('kitchenA');
+}
+
+function chclickinfospotruangtamuBB2(){ 
+ChangePanorama('kamaranak2A');
+}
+
+function chclickinfospotruangtamuBB3(){ 
+ChangePanorama('kamaranak1A');
+}
+
+function chclickinfospotruangtamuBB4(){ 
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+}
+
+function chclickinfospotruangtamuA0(){ 
+ChangePanorama('ruangtamuBB');
+}
+
+function chclickinfospotruangtamuA1(){ 
+ChangePanorama('kamaranak1A');
+}
+
+function chclickinfospotruangtamuA2(){ 
+showMedia(1, 'images/solidsurface.jpg');
+}
+
+function chclickinfospotruangtamuA3(){ 
+showMedia(1, 'images/TIX0136VA.jpg');
+showMedia(1, 'images/TIX0136VA.jpg');
+}
+
+function chclickinfospotruangtamuA4(){ 
+showMedia(1, 'images/TVCABINET.jpg');
+}
+
+function chclickinfospotruangtamuA5(){ 
+showMedia(1, 'images/TH022D.jpg');
+}
+
+function chclickinfospotruangtamuA6(){ 
+showMedia(1, 'images/TH061SB.jpg');
+showMedia(1, 'images/TH061SB.jpg');
+}
+
+function chclickinfospotruangtamuA7(){ 
+showMedia(1, 'images/id111342077qukwlis5wop6huxq98.jpeg');
+}
+
+function chclickinfospotruangtamuA8(){ 
+showMedia(1, 'images/d856158188e14affaebb23aea13f5e79.jpg');
+}
+
+function chclickinfospotruangtamuA9(){ 
+showMedia(1, 'images/TH051AA.jpg');
+}
+
+function chclickinfospotruangtamuA10(){ 
+showMedia(1, 'images/TV5520SPC.jpg');
+}
+
+function chclickinfospotkitchenB0(){ 
+ChangePanorama('kitchenc');
+}
+
+function chclickinfospotkitchenB1(){ 
+ChangePanorama('kitchenA');
+}
+
+function chclickinfospotkitchenB2(){ 
+ChangePanorama('kamarutamaA');
+}
+
+function chclickinfospotkitchenB3(){ 
+ChangePanorama('bt3c11Pqp0X');
+}
+
+function chclickinfospotkitchenB4(){ 
+showMedia(1, 'images/TH061SB.jpg');
+}
+
+function chclickinfospotkitchenB5(){ 
+showMedia(1, 'images/TH234AC.jpg');
+}
+
+function chclickinfospotkitchenB6(){ 
+showMedia(1, 'images/FA128.png');
+}
+
+function chclickinfospotkitchenB7(){ 
+showMedia(1, 'images/RULAM241.jpg');
+}
+
+function chclickinfospotkitchenB8(){ 
+showMedia(1, 'images/solidsurface.jpg');
+}
+
+function chclickinfospotkitchenA0(){ 
+ChangePanorama('ruangtamuBB');
+}
+
+function chclickinfospotkitchenA1(){ 
+ChangePanorama('kamaranak2A');
+}
+
+function chclickinfospotkitchenA2(){ 
+ChangePanorama('kitchenB');
+}
+
+function chclickinfospotkitchenA3(){ 
+ChangePanorama('kamarutamaA');
+}
+
+function chclickinfospotkitchenA4(){ 
+ChangePanorama('kitchenc');
+}
+
+function chclickinfospotkitchenc0(){ 
+ChangePanorama('kamarutamaA');
+}
+
+function chclickinfospotkitchenc1(){ 
+ChangePanorama('kitchenB');
+}
+
+function chclickinfospotkitchenc2(){ 
+ChangePanorama('ruangtamuBB');
+}
+
+function chclickinfospotkitchenc3(){ 
+ChangePanorama('bt3c11Pqp0X');
+}
+
+function chclickinfospotbt10(){ 
+ChangePanorama('kamaranak1B');
+}
+
+function chclickinfospotbt11(){ 
+ChangePanorama('bt22');
+}
+
+function chclickinfospotbt12(){ 
+showMedia(1, 'images/42c3251025ed443288811465be0898b9.jpeg');
+}
+
+function chclickinfospotbt13(){ 
+showMedia(1, 'images/id111342077r98rlpj8aw3lbrcna1.jpeg');
+}
+
+function chclickinfospotbt220(){ 
+ChangePanorama('bt1');
+}
+
+function chclickinfospotbt221(){ 
+ChangePanorama('kamaranak1B');
+}
+
+function chclickinfospotbt1c1b0(){ 
+ChangePanorama('kamaranak2A');
+}
+
+function chclickinfospotbt1c1b1(){ 
+ChangePanorama('bt2c22');
+}
+
+function chclickinfospotbt1c1b2(){ 
+showMedia(1, 'images/id111342077r98rlpj8aw3lbrcna1.jpeg');
+}
+
+function chclickinfospotbt1c1b3(){ 
+showMedia(1, 'images/id111342017r98wltgjr1zzaw7706.jpeg');
+}
+
+function chclickinfospotbt1c1b4(){ 
+showMedia(1, 'images/ebc4e415851042529b88a7f53c4c955c.jpg');
+}
+
+function chclickinfospotbt2c220(){ 
+ChangePanorama('kamaranak2A');
+}
+
+function chclickinfospotbt2c221(){ 
+ChangePanorama('bt1c1b');
+}
+
+function chclickinfospotbt3c110(){ 
+ChangePanorama('kamarutamaC');
+}
+
+function chclickinfospotbt3c111(){ 
+ChangePanorama('bt3c22');
+}
+
+function chclickinfospotbt3c112(){ 
+showMedia(1, 'images/id111342077r98xlvsayoiamq7tb4.jpeg');
+}
+
+function chclickinfospotbt3c113(){ 
+showMedia(1, 'images/9f97fc5e4179569dc6ab3c2a7202849b.jpg_720x720q80.jpg');
+}
+
+function chclickinfospotbt3c114(){ 
+showMedia(1, 'images/42c3251025ed443288811465be0898b9.jpeg');
+}
+
+function chclickinfospotbt3c220(){ 
+ChangePanorama('kamarutamaC');
+}
+
+function chclickinfospotbt3c221(){ 
+ChangePanorama('bt3c11');
+}
+
+function chclickinfospotbt3c11Pqp0X0(){ 
+ChangePanorama('bt3c22uIrNg');
+}
+
+function chclickinfospotbt3c11Pqp0X1(){ 
+ChangePanorama('kitchenc');
+}
+
+function chclickinfospotbt3c22uIrNg0(){ 
+ChangePanorama('bt3c11Pqp0X');
+}
+
+function chclickinfospotbt3c22uIrNg1(){ 
+ChangePanorama('kitchenc');
+}
+/*customjs-end*/
+        </script>
+	</body>
+</html>
